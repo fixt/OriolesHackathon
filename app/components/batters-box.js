@@ -11,18 +11,22 @@ import NoBat from './no-bat';
 import fieldImage from '../assets/field.jpg';
 
 class BattersBox extends Component {
+  static propTypes = {
+    batterSide: React.PropTypes.oneOf(['R', 'L']),
+    pitcherSidet: React.PropTypes.oneOf(['R', 'L']),
+  }
 
   render() {
-    const { batSide, guess } = this.props;
+    const { batSidbatterSide, guess } = this.props;
     return (
       <Container>
         <img
           src={fieldImage}
           style={fieldStyle}
         />
-          { batSide !== 'L' ? <Bat/> : <NoBat/> }
+          { batterSide !== 'L' ? <Bat/> : <NoBat/> }
           <StrikeZone guess={guess}/>
-          { batSide === 'L' ? <Bat/> : <NoBat/> }
+          { batterSide === 'L' ? <Bat/> : <NoBat/> }
       </Container>
     );
   }

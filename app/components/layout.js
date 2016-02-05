@@ -18,11 +18,16 @@ class Layout extends Component {
   }
 
   render() {
-    const { guess } = this.props;
+    const { guess, pitch } = this.props;
     return (
       <Page>
-        <GameStats></GameStats>
-        <BattersBox batSide='R' guess={guess}></BattersBox>
+        <GameStats />
+
+        <BattersBox
+          batterSide={ pitch.bat_side }
+          pitcherSide={ pitch.throws }
+          guess={ guess }
+        />
       </Page>
     );
   }
