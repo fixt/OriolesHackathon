@@ -9,7 +9,6 @@ import Bat from './bat';
 import NoBat from './no-bat';
 
 import fieldImage from '../assets/field.jpg';
-import nextPitch from '../actions/next-pitch';
 
 class BattersBox extends Component {
   static propTypes = {
@@ -25,7 +24,6 @@ class BattersBox extends Component {
           { batterSide !== 'L' ? <Bat/> : <NoBat/> }
           <StrikeZone guess={guess}/>
           { batterSide === 'L' ? <Bat/> : <NoBat/> }
-          <button onClick={() => { this.props.dispatch(nextPitch())}}>Next Pitch</button>
       </Container>
     );
   }

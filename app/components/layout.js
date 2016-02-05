@@ -31,6 +31,7 @@ class Layout extends Component {
         { guess.pageX ? <Guess x={guess.pageX} y={guess.pageY} /> : null }
         <LastPitch hidden={!showLastPitch} pitch={currentPitch}/>
         <GameStats currentPitch={currentPitch}></GameStats>
+
         <BattersBox
           dispatch={dispatch}
           batterSide={ currentPitch.bat_side }
