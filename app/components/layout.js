@@ -10,6 +10,7 @@ import initialize from '../actions/initialize'
 import GameStats from './game-stats'
 import BattersBox from './batters-box'
 import Guess from './guess'
+import LastPitch from './last-pitch'
 
 import '../index.css';
 
@@ -24,10 +25,11 @@ class Layout extends Component {
   }
 
   render() {
-    const { guess, currentPitch } = this.props;
+    const { guess, currentPitch, showLastPitch } = this.props;
     return (
       <Page>
         { guess.pageX ? <Guess x={guess.pageX} y={guess.pageY} /> : null }
+        <LastPitch hidden={!showLastPitch} pitch={currentPitch}/>
         <GameStats currentPitch={currentPitch}></GameStats>
         <BattersBox
           batterSide={ currentPitch.bat_side }
