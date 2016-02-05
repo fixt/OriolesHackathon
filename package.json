@@ -1,0 +1,19 @@
+{
+  "name": "fixt-oriolies-hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fixt/OriolesHackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fixt/OriolesHackathon/issues"
+  },
+  "homepage": "https://github.com/fixt/OriolesHackathon#readme"
+}
