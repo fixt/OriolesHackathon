@@ -2,9 +2,9 @@ import { SELECT_PITCH } from './'
 
 export default function nextPitch() {
   return (dispatch, getState) => {
-    const { pitch, pitches } = getState()
+    const { currentPitch, pitches } = getState()
 
-    const nextPitch = findNextPitch(pitches, pitch)
+    const nextPitch = findNextPitch(pitches, currentPitch)
 
     return dispatch(selectPitch(nextPitch))
   }
