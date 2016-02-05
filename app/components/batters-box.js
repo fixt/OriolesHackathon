@@ -37,11 +37,10 @@ const fieldStyle = {
 const Container = wrapper({
   position: 'relative',
   marginTop: '1em',
-  height: '60vh',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  flex: 1,
+  flex: 0.7,
   border: '0.5em solid #333',
   backgroundColor: '#eee',
   boxShadow: '0px 0.2px 0px #888',

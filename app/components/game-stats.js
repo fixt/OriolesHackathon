@@ -67,7 +67,7 @@ const circleStyle = {
 const Box = wrapper({
   display: 'flex',
   flexDirection: 'column',
-  flex: 0.4,
+  flex: 0.25,
   border: '0.5em solid #333',
   backgroundColor: '#eee',
   boxShadow: '0px 0.2em 0px #888',
