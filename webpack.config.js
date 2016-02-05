@@ -28,6 +28,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css?$/, loader: 'style-loader!css-loader'},
+      { test: /\.otf?$/, loader: 'url-loader?limit=50000'},
       { test: /\.js?$/,
         loaders: ['react-hot-loader', 'babel'],
         exclude: /(node_modules|lib)/ },
