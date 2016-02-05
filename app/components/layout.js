@@ -38,4 +38,4 @@ const Page = wrapper({
   backgroundColor: '#fb4f14',
 });
 
-export default connect(state)(Layout)
+export default connect(state => state)(Layout)

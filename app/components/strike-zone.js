@@ -1,6 +1,7 @@
 /* @flow */
 
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import nextGuess from '../actions/next-guess';
 
 import wrapper from './wrapper';
