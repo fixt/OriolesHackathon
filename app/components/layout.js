@@ -13,6 +13,11 @@ import BattersBox from './batters-box'
 import '../index.css';
 
 class Layout extends Component {
+  static defaultProps = {
+    pitch: {},
+    guest: {},
+  };
+
   componentWillMount() {
     this.props.dispatch(initialize())
   }

@@ -14,10 +14,11 @@ class BattersBox extends Component {
   static propTypes = {
     batterSide: React.PropTypes.oneOf(['R', 'L']),
     pitcherSidet: React.PropTypes.oneOf(['R', 'L']),
-  }
+  };
 
   render() {
-    const { batSidbatterSide, guess } = this.props;
+    const { batterSide, guess } = this.props;
+
     return (
       <Container>
         <img
