@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+echo "==> Building site"
+rm -rf ./dist/*
+node_modules/.bin/webpack -p --devtool "source-map"
