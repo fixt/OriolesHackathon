@@ -1,11 +1,11 @@
 import Sequelize from 'sequelize'
 
 const DATABASE_URL = process.env.DATABASE_URL
+const USE_SSL = process.env.NODE_ENV == 'development' ? true : false
 
 const Conn = new Sequelize(DATABASE_URL, {
-  dialect: 'postgres',
   dialectOptions: {
-    ssl: true
+    ssl: USE_SSL
   }
 })
 
