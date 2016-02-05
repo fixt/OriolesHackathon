@@ -9,6 +9,7 @@ import initialize from '../actions/initialize'
 
 import GameStats from './game-stats'
 import BattersBox from './batters-box'
+import Guess from './guess'
 
 import '../index.css';
 
@@ -27,7 +28,7 @@ class Layout extends Component {
     return (
       <Page>
         <GameStats />
-
+        { guess.pageX ? <Guess x={guess.pageX} y={guess.pageY} /> : null }
         <BattersBox
           batterSide={ pitch.bat_side }
           pitcherSide={ pitch.throws }

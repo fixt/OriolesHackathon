@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import nextGuess from '../actions/next-guess';
+import nextPitch from '../actions/next-pitch';
 
 import wrapper from './wrapper';
 
@@ -13,6 +14,7 @@ class StrikeZone extends Component {
   }
   guess(e) {
     this.props.dispatch(nextGuess(e));
+    this.props.dispatch(nextPitch());
   }
   render() {
     return (
