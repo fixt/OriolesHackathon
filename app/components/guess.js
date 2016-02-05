@@ -17,6 +17,7 @@ class Guess extends Component {
           width: '1.5em',
           height: '1.5em',
           zIndex: 2,
+          opacity: 0.5,
         }}
       />
     );
