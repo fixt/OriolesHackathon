@@ -15,13 +15,15 @@ class GameStats extends Component {
   }
 
   render() {
+    let currentPitch = this.props.currentPitch;
+
     return (
       <Box>
         <div style={{display: 'flex', flex: 1, flexDirection: 'column', height: '100%', width: '100%'}}>
           <div style={{paddingTop: '5px', display: 'flex', alignItems: 'stretch', flex: 0.1, flexDirection: 'row'}}>
-            <TeamScore />
-            <OnBase />
-            <TeamScore />
+            <TeamScore currentPitch={currentPitch}/>
+            <OnBase currentPitch={currentPitch}/>
+            <TeamScore currentPitch={currentPitch}/>
           </div>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'stretch', justifyContent: 'center', flex: 1}}>
             <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'stretch'}}>
