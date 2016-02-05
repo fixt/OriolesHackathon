@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-class Dashboard extends Component {
+class UI extends Component {
   componentWillMount() {
   }
 
@@ -19,4 +19,4 @@ class Dashboard extends Component {
   }
 }
 
-export default connect()(Dashboard)
+export default connect()(UI)

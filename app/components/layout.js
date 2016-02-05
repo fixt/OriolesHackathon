@@ -32,7 +32,7 @@ class Layout extends Component {
 
 const Page = wrapper({
   display: 'flex',
-  justifyContent: 'space-between',
+  justifyContent: 'stretch',
   flex: 1,
   flexDirection: 'column',
   padding: '0.5em',
