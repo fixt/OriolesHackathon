@@ -1,18 +1,13 @@
-import { getPitchesByGame } from '../data'
-import { PITCHES_LOADED } from './'
+import loadPitches from './load-pitches'
+import nextPitch from './next-pitch'
 import actionErrorHandler from '../utils/action-error-handler'
 
 export default function initialize() {
   return (dispatch) => {
-    getPitchesByGame('2013/04/01/kcamlb-chamlb-1')
-      .then(({ pitches }) => dispatch(pitchesLoaded(pitches)))
-      .catch(actionErrorHandler)
-  }
-}
+    dispatch(loadPitches())
 
-function pitchesLoaded(pitches) {
-  return {
-    type: PITCHES_LOADED,
-    pitches
+    setTimeout(() => {
+      dispatch(nextPitch())
+    }, 3000)
   }
 }

@@ -1,2 +1,3 @@
 export const PITCHES_LOADED = 'PITCHES_LOADED'
+export const SELECT_PITCH = 'SELECT_PITCH'
 export const USER_GUESSED = 'USER_GUESSED'
