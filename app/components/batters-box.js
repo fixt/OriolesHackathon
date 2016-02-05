@@ -39,7 +39,7 @@ const Container = wrapper({
   border: '0.5em solid #333',
   backgroundColor: '#eee',
   backgroundImage: `url(${fieldImage})`,
-  backgroundPosition: 'center',
+  backgroundPosition: '50% 5%',
   backgroundRepeat: 'no-repeat',
   boxShadow: '0px 0.2px 0px #888',
   borderRadius: '6px',

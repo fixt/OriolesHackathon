@@ -8,8 +8,8 @@ class TeamScore extends Component {
   render() {
     return (
       <Box>
-        <div style={{flex: 1, textAlign: 'center'}}>Baltimore</div>
-        <div style={{flex: 1, textAlign: 'center', margin: 15}}>5</div>
+        <div style={{flex: 1, textAlign: 'center'}}>{this.props.team}</div>
+        <div style={{flex: 1, textAlign: 'center', margin: 15}}>0</div>
       </Box>
     );
   }
