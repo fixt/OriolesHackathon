@@ -29,7 +29,7 @@ const Zone = wrapper({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  height: '50vh',
+  height: '40vh',
   width: '37.5vh',
   backgroundColor: "#000",
   border: '2px solid #fb4f14',
