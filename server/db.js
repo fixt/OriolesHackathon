@@ -1,7 +1,7 @@
 import Sequelize from 'sequelize'
 
 const DATABASE_URL = process.env.DATABASE_URL
-const USE_SSL = process.env.NODE_ENV == 'development' ? true : false
+const USE_SSL = process.env.NODE_ENV == 'production' ? false : true
 
 const Conn = new Sequelize(DATABASE_URL, {
   dialect: 'postgres',
@@ -128,6 +128,18 @@ const Pitch = Conn.define('pitch', {
   runneron3rd_id: {
     type: Sequelize.INTEGER,
   },
+}, {
+  timestamps: false,
+})
+
+const Pitcher = Conn.define('pitcher', {
+  pitcher_id: {
+    type: Sequelize.INTEGER,
+    primaryKey: true,
+  },
+  name: {
+    type: Sequelize.STRING,
+  }
 }, {
   timestamps: false,
 })
