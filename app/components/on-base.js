@@ -11,7 +11,7 @@ class OnBase extends Component {
       <Box>
         <div style={{flex: 1, justifyContent: 'center', textAlign: 'center'}}>Bot 1st</div>
         <div style={{display: 'flex', flex: 1, justifyContent: 'center', textAlign: 'center', margin: 25, fontSize: '2em'}}>
-          <div style={{height: '40px', transform: 'rotate(45deg)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '40px', border: '1px solid black'}}>
+          <div style={{height: '30px', transform: 'rotate(45deg)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '30px', border: '1px solid black'}}>
             <div style={{display: 'flex', flex:1, justifyContent: 'space-between'}}>
               <div style={{height: '5px', width: '5px', backgroundColor: 'black', border: '1px solid black'}}></div>
               <div style={{height: '5px', width: '5px', backgroundColor: 'black', border: '1px solid black'}}></div>
@@ -29,7 +29,6 @@ class OnBase extends Component {
 
 const Box = wrapper({
   flex: 1,
-  backgroundColor: 'blue'
 });
 
 export default OnBase;

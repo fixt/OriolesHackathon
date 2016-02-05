@@ -8,8 +8,8 @@ class TeamScore extends Component {
   render() {
     return (
       <Box>
-        <div style={{flex: 1, textAlign: 'center', fontSize: '2em'}}>Baltimore</div>
-        <div style={{flex: 1, textAlign: 'center', margin: 15, fontSize: '4em'}}>5</div>
+        <div style={{flex: 1, textAlign: 'center'}}>Baltimore</div>
+        <div style={{flex: 1, textAlign: 'center', margin: 15}}>5</div>
       </Box>
     );
   }
@@ -17,6 +17,8 @@ class TeamScore extends Component {
 
 const Box = wrapper({
   flex: 1,
+  display: 'flex',
+  flexDirection: 'column'
 });
 
 export default TeamScore;
