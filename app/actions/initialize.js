@@ -5,9 +5,5 @@ import actionErrorHandler from '../utils/action-error-handler'
 export default function initialize() {
   return (dispatch) => {
     dispatch(loadPitches())
-
-    setTimeout(() => {
-      dispatch(nextPitch())
-    }, 3000)
   }
 }

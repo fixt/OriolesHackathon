@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import wrapper from './wrapper';
 
 import initialize from '../actions/initialize'
+import nextPitch from '../actions/next-pitch'
 
 import GameStats from './game-stats'
 import BattersBox from './batters-box'
@@ -24,8 +25,21 @@ class Layout extends Component {
     this.props.dispatch(initialize())
   }
 
+  getStarted() {
+    this.props.dispatch(nextPitch())
+  }
+
   render() {
-    const { guess, currentPitch, dispatch} = this.props;
+    const { pitches, guess, currentPitch, showLastPitch, dispatch} = this.props;
+
+    if(pitches.length == 0) {
+      return <Page><h1>Loading</h1></Page>
+    }
+
+    if(currentPitch.sv_pitch_id == null || typeof currentPitch.sv_pitch_id == 'undefined') {
+      return <Page><button onClick={ this.getStarted.bind(this) }>Get Started</button></Page>
+    }
+
     return (
       <Page>
         { guess.pageX ? <Guess x={guess.pageX} y={guess.pageY} /> : null }
