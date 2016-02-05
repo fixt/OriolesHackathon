@@ -19,7 +19,12 @@ class LastPitch extends Component {
   }
 
   render() {
+    const { hidden } = this.props;
+    if (hidden) {
+      return null;
+    }
     const { x, y } = this.calculateCoordinates();
+
     return (
       <img
         src={baseball}
