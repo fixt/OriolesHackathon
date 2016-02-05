@@ -14,7 +14,7 @@ class StrikeZone extends Component {
   }
   guess(e) {
     this.props.dispatch(nextGuess(e));
-    this.props.dispatch(nextPitch());
+    //this.props.dispatch(nextPitch());
   }
   render() {
     return (
