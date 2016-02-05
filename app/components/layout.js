@@ -17,14 +17,12 @@ class Layout extends Component {
     this.props.dispatch(initialize())
   }
 
-  handleSelection() {
-  }
-
   render() {
+    const { guess } = this.props;
     return (
       <Page>
         <GameStats></GameStats>
-        <BattersBox batSide='R'></BattersBox>
+        <BattersBox batSide='R' guess={guess}></BattersBox>
       </Page>
     );
   }
@@ -40,4 +38,4 @@ const Page = wrapper({
   backgroundColor: '#fb4f14',
 });
 
-export default connect()(Layout)
+export default connect(state)(Layout)

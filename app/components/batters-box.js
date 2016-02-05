@@ -13,7 +13,7 @@ import fieldImage from '../assets/field.jpg';
 class BattersBox extends Component {
 
   render() {
-    const { batSide } = this.props;
+    const { batSide, guess } = this.props;
     return (
       <Container>
         <img
@@ -21,7 +21,7 @@ class BattersBox extends Component {
           style={fieldStyle}
         />
           { batSide !== 'L' ? <Bat/> : <NoBat/> }
-          <StrikeZone/>
+          <StrikeZone guess={guess}/>
           { batSide === 'L' ? <Bat/> : <NoBat/> }
       </Container>
     );

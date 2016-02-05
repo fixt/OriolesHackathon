@@ -1,8 +1,8 @@
 import { createReducer } from '../utils';
-import { USER_GUESSED } from '../actions';
+import { GUESS } from '../actions';
 
 export default createReducer({}, {
-  [USER_GUESSED]: (state, {}) => {
-    return { ...state };
+  [GUESS]: (state, { pageX, pageY }) => {
+    return { pageX, pageY };
   }
 });
