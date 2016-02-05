@@ -1,11 +1,12 @@
 import Sequelize from 'sequelize'
 
 const DATABASE_URL = process.env.DATABASE_URL
+const VERBOSE = process.env.NODE_ENV == 'production' ? false : console.log
 
 const Conn = new Sequelize(DATABASE_URL, {
   dialect: 'postgres',
   protocol: 'postgres',
-  logging: false,
+  logging: VERBOSE,
   dialectOptions: {
     ssl: true
   }
