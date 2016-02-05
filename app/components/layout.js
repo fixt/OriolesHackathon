@@ -29,8 +29,10 @@ class Layout extends Component {
 
 const Page = wrapper({
   flex: 1,
+  flexDirection: 'column',
   padding: 10,
-  height: '100vh'
+  height: '100vh',
+  backgroundColor: '#fb4f14',
 });
 
 export default connect()(Layout)
