@@ -21,13 +21,15 @@ class Layout extends Component {
     return (
       <Page>
         <GameStats></GameStats>
-        <BattersBox></BattersBox>
+        <BattersBox batSide='R'></BattersBox>
       </Page>
     );
   }
 }
 
 const Page = wrapper({
+  display: 'flex',
+  justifyContent: 'space-between',
   flex: 1,
   flexDirection: 'column',
   padding: 10,

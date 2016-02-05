@@ -14,8 +14,7 @@ class StrikeZone extends Component {
 }
 
 const Zone = wrapper({
-  position: 'absolute',
-  margin: '5vh auto',
+  display: 'flex',
   height: '50vh',
   width: '37.5vh',
   backgroundColor: "#00ff00",
