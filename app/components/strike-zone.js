@@ -17,7 +17,10 @@ const Zone = wrapper({
   display: 'flex',
   height: '50vh',
   width: '37.5vh',
-  backgroundColor: "#00ff00",
+  backgroundColor: "#000",
+  border: '2px solid #fb4f14',
+  opacity: 0.5,
+  zIndex: '1',
 });
 
 export default StrikeZone;

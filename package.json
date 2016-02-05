@@ -38,6 +38,7 @@
     "graphql-sequelize": "^0.19.1",
     "history": "^1.17.0",
     "html-webpack-plugin": "^1.6.0",
+    "image-webpack-loader": "^1.6.3",
     "morgan": "^1.6.1",
     "nodemon": "^1.8.1",
     "pg": "^4.4.4",

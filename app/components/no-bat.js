@@ -1,13 +1,11 @@
 /* @flow */
 
 import React, { Component } from 'react';
-import batImg from '../assets/bat.png';
 
-class Bat extends Component {
+class NoBat extends Component {
   render() {
     return (
-      <img
-        src={batImg}
+      <div
         style={{
           height: '40em',
           width: '8em',
@@ -17,4 +15,4 @@ class Bat extends Component {
   }
 }
 
-export default Bat;
+export default NoBat;
