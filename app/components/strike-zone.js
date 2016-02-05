@@ -21,7 +21,7 @@ class StrikeZone extends Component {
       <Zone
         onClick={this.guess}
       >
-        <Strike/>
+        <Strike id="strikezone" />
       </Zone>
     );
   }

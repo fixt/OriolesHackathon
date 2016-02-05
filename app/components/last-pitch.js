@@ -5,8 +5,21 @@ import React, { Component } from 'react';
 import baseball from '../assets/baseball.png';
 
 class LastPitch extends Component {
+  calculateCoordinates() {
+    const { pitch } = this.props;
+    const { plate_x, plate_z } = pitch;
+    const zone = document.getElementById('strikezone').getBoundingClientRect();
+    const centerX = zone.left + zone.width / 2;
+    const zoneBottom = zone.bottom;
+    const scale = (centerX - zone.left) * 12 / 8.5;
+    const x = centerX + plate_x * scale;
+    const y = zoneBottom - ((plate_z - 2) * scale);
+
+    return { x, y };
+  }
+
   render() {
-    var x = 0, y = 0;
+    const { x, y } = this.calculateCoordinates();
     return (
       <img
         src={baseball}

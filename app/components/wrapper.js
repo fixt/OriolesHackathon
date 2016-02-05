@@ -1,9 +1,10 @@
 import React from 'react'
 
 export default function wrapper(style, type = 'div') {
-  return ({ children, onClick, ...overrides }) => {
+  return ({ children, onClick, id, ...overrides }) => {
     const props = {
       style: {...style, ...overrides},
+      id,
       onClick,
     }
 
