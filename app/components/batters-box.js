@@ -21,10 +21,6 @@ class BattersBox extends Component {
 
     return (
       <Container>
-        <img
-          src={fieldImage}
-          style={fieldStyle}
-        />
           { batterSide !== 'L' ? <Bat/> : <NoBat/> }
           <StrikeZone guess={guess}/>
           { batterSide === 'L' ? <Bat/> : <NoBat/> }
@@ -32,12 +28,6 @@ class BattersBox extends Component {
     );
   }
 }
-
-const fieldStyle = {
-  position: 'absolute',
-  height: '100%',
-  left: 0,
-};
 
 const Container = wrapper({
   position: 'relative',
@@ -48,6 +38,9 @@ const Container = wrapper({
   flex: 0.7,
   border: '0.5em solid #333',
   backgroundColor: '#eee',
+  backgroundImage: `url(${fieldImage})`,
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
   boxShadow: '0px 0.2px 0px #888',
   borderRadius: '6px',
   overflow: 'hidden',
