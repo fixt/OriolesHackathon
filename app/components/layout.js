@@ -25,13 +25,14 @@ class Layout extends Component {
   }
 
   render() {
-    const { guess, currentPitch, showLastPitch } = this.props;
+    const { guess, currentPitch, showLastPitch, dispatch} = this.props;
     return (
       <Page>
         { guess.pageX ? <Guess x={guess.pageX} y={guess.pageY} /> : null }
         <LastPitch hidden={!showLastPitch} pitch={currentPitch}/>
         <GameStats currentPitch={currentPitch}></GameStats>
         <BattersBox
+          dispatch={dispatch}
           batterSide={ currentPitch.bat_side }
           pitcherSide={ currentPitch.throws }
           guess={ guess }
