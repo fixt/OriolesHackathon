@@ -5,6 +5,8 @@ import { connect } from 'react-redux';
 
 import wrapper from './wrapper';
 
+import initialize from '../actions/initialize'
+
 import GameStats from './game-stats'
 import BattersBox from './batters-box'
 
@@ -12,6 +14,7 @@ import '../index.css';
 
 class Layout extends Component {
   componentWillMount() {
+    this.props.dispatch(initialize())
   }
 
   handleSelection() {

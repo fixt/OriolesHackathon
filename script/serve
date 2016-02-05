@@ -4,7 +4,7 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-if [ "$NODE_ENV" == "production" ]; then
+if [ "$NODE_ENV" = "production" ]; then
     npm run babel-node -- server
 else
     DATABASE_URL=$(heroku config:get DATABASE_URL -a pitch-api) nodemon --exec npm run babel-node -- server

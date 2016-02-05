@@ -1,0 +1,2 @@
+export const PITCHES_LOADED = 'PITCHES_LOADED'
+export const USER_GUESSED = 'USER_GUESSED'

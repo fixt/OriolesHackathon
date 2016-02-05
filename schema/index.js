@@ -28,7 +28,6 @@ const Query = new GraphQLObjectType({
       pitches: {
         type: new GraphQLList(Pitch),
         args: {
-          sv_pitch_id: { type: GraphQLString },
           game_id: { type: GraphQLString },
         },
         resolve: resolver(db.models.pitch)

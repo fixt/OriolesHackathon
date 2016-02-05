@@ -1,5 +1,5 @@
 import { createReducer } from '../utils';
-import { USER_GUESSED } from '../action-types';
+import { USER_GUESSED } from '../actions';
 
 export default createReducer({}, {
   [USER_GUESSED]: (state, {}) => {
