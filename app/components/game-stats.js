@@ -22,9 +22,9 @@ class GameStats extends Component {
 const Box = wrapper({
   display: 'flex',
   height: '20vh',
-  border: '2em solid #333',
+  border: '0.5em solid #333',
   backgroundColor: '#eee',
-  boxShadow: '0px 5px 0px #888',
+  boxShadow: '0px 0.2em 0px #888',
   borderRadius: '6px',
 });
 

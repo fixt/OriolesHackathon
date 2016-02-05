@@ -36,14 +36,14 @@ const fieldStyle = {
 
 const Container = wrapper({
   position: 'relative',
-  marginTop: '2em',
+  marginTop: '1em',
   height: '60vh',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
   flex: 0.95,
-  border: '2em solid #333',
-  boxShadow: '0px 5px 0px #888',
+  border: '0.5em solid #333',
+  boxShadow: '0px 0.2em 0px #888',
   borderRadius: '6px',
   overflow: 'hidden',
 });

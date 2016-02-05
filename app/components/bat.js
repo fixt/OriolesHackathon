@@ -9,8 +9,8 @@ class Bat extends Component {
       <img
         src={batImg}
         style={{
-          height: '40em',
-          width: '8em',
+          height: '10em',
+          width: '2em',
           zIndex: '1',
         }}
       />);

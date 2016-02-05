@@ -7,8 +7,8 @@ class NoBat extends Component {
     return (
       <div
         style={{
-          height: '40em',
-          width: '8em',
+          height: '10em',
+          width: '2em',
           zIndex: '1',
         }}
       />);

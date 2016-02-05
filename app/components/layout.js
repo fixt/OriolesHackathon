@@ -35,7 +35,7 @@ const Page = wrapper({
   justifyContent: 'space-between',
   flex: 1,
   flexDirection: 'column',
-  padding: 10,
+  padding: '0.5em',
   height: '100vh',
   backgroundColor: '#fb4f14',
 });
