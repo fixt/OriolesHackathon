@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000
 app.use(morgan('dev'))
 app.use(cors())
 app.use(express.static('dist'))
-app.use('/graphql', graphql({ schema: schema, rootValue: {  }, graphiql: true }))
+app.use('/graphql', graphql({ schema: schema, pretty: true, graphiql: true }))
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`)
