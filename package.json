@@ -6,7 +6,7 @@
   "scripts": {
     "babel-node": "babel-node",
     "build": "script/build",
-    "postinstall": "[ \"$NODE_ENV\" == production ] && npm run build",
+    "postinstall": "[ \"$NODE_ENV\" != production ] || npm run build",
     "start": "script/start",
     "serve": "script/serve"
   },
@@ -20,7 +20,7 @@
     "url": "https://github.com/fixt/OriolesHackathon/issues"
   },
   "homepage": "https://github.com/fixt/OriolesHackathon#readme",
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.4.5",
     "babel-eslint": "^4.1.8",
     "babel-loader": "^6.2.2",
@@ -40,9 +40,7 @@
     "redux-devtools-log-monitor": "^1.0.4",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13",
-    "webpack-dev-server": "^1.14.1"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^1.14.1",
     "babel-cli": "^6.4.5",
     "cors": "^2.7.1",
     "express": "^4.13.4",
