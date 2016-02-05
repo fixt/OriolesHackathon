@@ -22,9 +22,9 @@ class GameStats extends Component {
       <Box>
         <div style={{display: 'flex', flex: 1, flexDirection: 'column', height: '100%', width: '100%'}}>
           <div style={{paddingTop: '5px', display: 'flex', alignItems: 'stretch', flex: 1, flexDirection: 'row', minHeight: 20}}>
-            <TeamScore team={"Miami"}/>
+            <TeamScore team={"Baltimore"}/>
             <OnBase currentPitch={currentPitch}/>
-            <TeamScore team={"Washington"}/>
+            <TeamScore team={"Tampa Bay"}/>
           </div>
 
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'stretch', justifyContent: 'center', flex: 1}}>
