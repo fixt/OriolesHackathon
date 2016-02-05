@@ -1,4 +1,4 @@
-const PROD_HOST = '/';
+const PROD_HOST = '';
 const DEV_HOST = 'http://localhost:3000';
 //const DEV_HOST = PROD_HOST;
 
