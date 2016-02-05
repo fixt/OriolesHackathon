@@ -8,6 +8,6 @@ import currentPitch from './current-pitch'
 export default combineReducers({
   routing,
   pitches,
-  guess
+  guess,
   currentPitch
 });
